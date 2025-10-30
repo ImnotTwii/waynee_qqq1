@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>U GOT HACKED </title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    /* Background video */
+    #bgVideo {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.6);
+    }
+
+    /* Center container */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      gap: 1.5rem;
+      backdrop-filter: blur(2px);
+    }
+
+    /* Social cards */
+    .card {
+      background: rgba(0, 0, 0, 0.45);
+      padding: 1.2rem 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+      width: min(90%, 380px);
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: rgba(0, 0, 0, 0.65);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    }
+    .card h2 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+    }
+    .card a {
+      color: #aee1ff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .card a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video background -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="celestial-veil.3840x2160.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Social Cards -->
+  <div class="container">
+    <div class="card">
+      <h2>Facebook</h2>
+      <a href="https://www.facebook.com/share/1BV7KBKhrg/" target="_blank">Visit my Facebook</a>
+    </div>
+
+    <div class="card">
+      <h2>TikTok</h2>
+      <a href="https://www.tiktok.com/@whatever___q?_t=ZS-90z0MHdbI4i&_r=1" target="_blank">Check out my TikTok</a>
+    </div>
+
+    <div class="card">
+      <h2>Instagram</h2>
+      <a href="https://www.instagram.com/thissuserissleepin?igsh=dWhhb2w4aGZ4cnFj&utm_source=ig_contact_invite" target="_blank">Follow me on Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
